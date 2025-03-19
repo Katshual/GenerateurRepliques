@@ -24,7 +24,7 @@ export default {
         async getReplique() {
             this.loading = true;
             try {
-                const response = await axios.get("/api/replique");
+                const response = await axios.get("/api/replique/random");
                 this.replique = response.data;
             } catch (error) {
                 console.error(
